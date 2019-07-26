@@ -12,6 +12,10 @@ namespace InsuranceClientPortal.Models
         public string Name { get; set; }
         [DataType(DataType.Date)]
         [Display(Name="Application Date")]
+
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
         public DateTime AppDate { get; set; }
         public string InsuranceType { get; set; } //Partition Key
         [DataType(DataType.Currency)]
